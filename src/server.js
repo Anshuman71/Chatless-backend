@@ -11,7 +11,8 @@ const io = Socket.listen(server);
 app.get('/', (req, res) => {
   res.send('<h1>Started now</h1>');
 });
-server.listen('5000' || process.env.PORT, () => console.log('Running on 2017'));
+
+app.listen('5000' || process.env.PORT, () => console.log('Running on 2017'));
 
 // io.sockets.on('connection', sock => {
 //   connections.push(sock);
