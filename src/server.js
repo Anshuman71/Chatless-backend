@@ -8,11 +8,10 @@ let connections = [];
 const server = http.createServer(app);
 
 const io = Socket.listen(server);
-io.origins('*:*');
-io.configure(function() {
-  io.set('transports', ['xhr-polling']);
-  io.set('polling duration', 10);
-});
+// io.configure(function() {
+//   io.set('transports', ['xhr-polling']);
+//   io.set('polling duration', 10);
+// });
 app.get('/', (req, res) => {
   res.send('<h1>Started now</h1>');
 });
