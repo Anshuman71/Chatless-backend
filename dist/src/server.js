@@ -20,10 +20,6 @@ var connections = [];
 var server = _http2.default.createServer(app);
 
 var io = _socket2.default.listen(server);
-// io.configure(function() {
-//   io.set('transports', ['xhr-polling']);
-//   io.set('polling duration', 10);
-// });
 app.get('/', function (req, res) {
   res.send('<h1>Started now</h1>');
 });
