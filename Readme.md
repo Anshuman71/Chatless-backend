@@ -1,5 +1,5 @@
 # Simple chat app backend using NodeJs and Socket.io
 
-## to start
+## To build and start the server
 
 `npm start`
